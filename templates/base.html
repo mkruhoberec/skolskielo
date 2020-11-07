@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Školski ELO</title>
+  </head>
+  <body>
+    <p><a href="http://127.0.0.1:5000/home">Dodaj Igrača</a>
+      <a href="http://127.0.0.1:5000/elo">ELO lista</a>
+      <a href="http://127.0.0.1:5000/delete">Brisanje</a>
+    </p>
+    <h1>{% block title %}{% endblock %}</h1>
+    <p>
+      {% block content %}
+      {% endblock %}
+    </p>
+  </body>
+</html>

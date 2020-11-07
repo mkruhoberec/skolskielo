@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block titlte %} Match {% endblock %}
+{% block content %}
+<h1>Match:</h1>
+<p>Lista:</p>
+<p>{{ ucenik }}</p>
+<form class="" action="#" method="post">
+  <p>Pobjednik: <input type="text" name="nmm1"/> Poraženi: <input type="text" name="nmm2"/> Nerješeno<input type="checkbox" name="draw"/></p>
+  <p><input type="submit" value="submit"/></p>
+{% endblock %}
