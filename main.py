@@ -37,9 +37,13 @@ app = Flask(__name__)
 
 lista = []
 
+@app.route("/index.html")
+def index():
+    return render_template("index.html")
 
-@app.route("/home", methods=["POST", "GET"])
-def home():
+
+@app.route("/addplayer.html", methods=["POST", "GET"])
+def addplayer():
     if request.method == "POST":
         conn = sqlite3.connect('ucenici.db')
         c = conn.cursor()
@@ -52,13 +56,13 @@ def home():
         return render_template("addplayer.html")
 
 
-@app.route("/elo")
+@app.route("/elo.html")
 def elo():
     lista = get_ucenik()
     return render_template("elo.html", ucenik = lista)
 
 
-@app.route("/delete", methods=["POST", "GET"])
+@app.route("/delete.html", methods=["POST", "GET"])
 def delete():
     if request.method == "POST":
         conn = sqlite3.connect('ucenici.db')
@@ -72,7 +76,7 @@ def delete():
         return render_template("delete.html", ucenik = lista)
 
 
-@app.route("/match", methods=["POST", "GET"])
+@app.route("/match.html", methods=["POST", "GET"])
 def match():
     if request.method == "POST":
         conn = sqlite3.connect('ucenici.db')

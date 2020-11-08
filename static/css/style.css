@@ -1,0 +1,111 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/sah-banner.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showcase-inner h1 {
+    font-size: 4rem;
+    color: white;
+    font-style: normal;
+}
+
+.showcase-inner h3 {
+    color: white;
+}
+
+.navigation tr {
+    margin-top: 80px;
+    float: left;
+}
+
+.navigation tr a {
+    color: white;
+    text-decoration: none;
+    background: grey;
+    margin: 20px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+.navigation a:hover {
+    background: black;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+    background: url('/static/images/chess-white.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+}
+
+.container a {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    float: left;
+}
+
+.container a img {
+    width: 20px;
+    height: 20px;
+}
+
+.container-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: purple;
+}
+
+.container-data div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+section .elo {
+    background: #f2f2f2;
+}
